@@ -11,7 +11,7 @@ class school_command_handler(commands.Cog):
     async def on_ready(self):
         print("School Command Handler is Ready")
     
-    @commands.command(name ="전공 공지글", description = "AI 교육원 및 공학과 글을 출력해줍니다!")
+    @commands.command(name ="전공관련학교공지글", description = "AI 교육원 및 공학과 글을 출력해줍니다!")
     async def school(self, ctx):
         # 크롤러 생성뒤, Facade Pattern으로 해당 함수를 수행할 수 있도록 해줌
         AI = AIunivCrawler()
